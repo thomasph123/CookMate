@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CookMate</title>
+  <link rel="stylesheet" href="./static/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🥘 CookMate</h1>
+    <nav>
+      <a href="#demo">Watch Demo</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Your Smart Cooking Companion</h2>
+      <p>CookMate helps home cooks explore, organize, and follow recipes with ease. Our app offers guided cooking instructions, timers, filters, and personalized recipe discovery.</p>
+      <a href="#demo" class="button">Watch Demo</a>
+    </div>
+    <img src="./src/screen.png" alt="CookMate Screenshot" />
+  </section>
+
+  <!-- Demo Section  -->
+  <section class="section" id="demo">
+    <div class="section-text">
+      <h2>Watch the Demo</h2>
+      <p>See CookMate in action! Click on the video to watch a full walkthrough of the main features.</p>
+    </div>
+    <video id="myVideo" controls class="full-video">
+      <source src="./src/Demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>    
+  </section>
+  
+ <!-- Overview -->
+  <section class="section" id="overview">
+    <div class="section-text">
+      <h2>CookMate Vision</h2>
+      <p>CookMate is a sleek and simple tool for people looking to elevate their cooking to the next level, providing unique recipe ideas based on what’s in the kitchen.</p>
+      <p>The app solves common cooking challenges like meal planning, recipe block, time management, and dietary needs. It offers a wide variety of recipes organized by categories such as prep time and dietary restrictions, making it easy for users to find meals that match their preferences. Upon opening the app, users are greeted by a curated recipe list to jumpstart their creativity. The built-in cook-timer simplifies tracking cooking times and ensures accuracy.</p>
+      <p>With easy access to a diverse list of recipes, CookMate inspires creativity, supports users in reaching dietary goals, and helps them stay engaged in their cooking journey. Users can search for specific recipes, and even contribute their own with personal notes and images.</p>
+      <p>The favourites tab allows users to quickly access preferred dishes, while each recipe detail page includes an image, ingredients, and a vivid description. CookMate is ideal for those who want to diversify their meals, learn new recipes, and enjoy a smoother cooking experience.</p>
+      <p><strong>Success Metrics:</strong> 1,000 user reviews in the first year with an average rating of 4.5/5 and 80% user retention over one year.</p>
+    </div>
+  </section>
+
+    <!-- Intended Users -->
+  <section class="section">
+    <div class="section-text">
+      <h2>Intended Users</h2>
+      <p>CookMate is designed for:</p>
+      <ul>
+        <li>Home cooks of all experience levels</li>
+        <li>Busy individuals needing quick meal ideas</li>
+        <li>People with dietary restrictions (vegetarian, gluten-free, etc.)</li>
+        <li>Users who enjoy personalizing their own recipes</li>
+        <li>Anyone looking to reduce food waste by cooking with available ingredients</li>
+      </ul>
+    </div>
+  </section>
+   <!-- Features -->
+  <section class="section" id="features">
+    <div class="section-text">
+      <h2>CookMate Features Overview</h2>
+      <ul>
+        <li><strong>Timer</strong> 
+          <br/>A built-in cooking timer designed to help users track recipe steps accurately.</li>
+  
+        <li><strong>Notes</strong> 
+          <br/>Allows users to add personal notes while cooking, making it easier to remember tips and adjustments.</li>
+  
+        <li><strong>Recipe Detail</strong> 
+          <br/>A detailed view of each recipe including ingredients, steps, and images.</li>
+  
+        <li><strong>Cooking Instruction</strong>  
+          <br/>Step-by-step cooking instructions with interactive timers and note support.</li>
+  
+        <li><strong>Favourites</strong>  
+          <br/>Enables users to mark and easily access their most-used or loved recipes.</li>
+  
+        <li><strong>Add Recipe</strong> 
+          <br/>Users can contribute their own recipes, complete with images, instructions, and personal notes.</li>
+  
+        <li><strong>Search</strong>
+          <br/>Quickly find specific recipes using keywords or filters like dietary preference and cook time.</li>
+  
+        <li><strong>Explore Recipes</strong> 
+          <br/>Browse recommended and trending recipes to get inspired based on what's in your kitchen.</li>
+      </ul>
+    </div>
+  </section>
+<!-- Feature Demos -->
+<section class="section">
+  <video class="media" controls muted width="720" height="480">
+    <source src="./src/Filter.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+  <div class="section-text">
+    <h2>Explore Recipes with Ease</h2>
+    <p>Filter by dietary preference, cooking time, or favorites. Our advanced search helps you find exactly what you're craving — fast.</p>
+  </div>
+</section>
+
+<section class="section reverse">
+  <div class="section-text">
+    <h2>Guided Cooking</h2>
+    <p>Step-by-step instructions with a built-in timer and note-taking make cooking simple and stress-free. Focus on the food — we’ll handle the flow.</p>
+  </div>
+  <video class="media" controls muted width="720" height="480">
+    <source src="./src/cookingInstruction.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="section">
+  <video class="media" controls muted width="720" height="480">
+    <source src="./src/AddRecipe.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="section-text">
+    <h2>Add Recipes</h2>
+    <p>Add your own recipes with ease. Upload photos, write instructions, and include tips for others to follow.</p>
+  </div>
+</section>
+ <!-- Postmortem -->
+  <section class="section" id="postmortem">
+    <div class="section-text">
+      <h2>Development Postmortem</h2>
+  
+      <h3>✅ What Went Well</h3>
+      <p>One of the major improvements in Iteration 2 was task delegation. Each team member was assigned a single feature at the beginning, which resulted in more organized work and a balanced distribution of responsibilities. Additionally, features like the recipe detail view, filtering system, cooking instructions, and explore page were implemented effectively and integrated without major conflicts.</p>
+      <p>We also started applying design patterns like Singleton, Factory Method, Adapter, and Observer in key parts of our application. These decisions helped simplify our architecture and improve maintainability.</p>
+  
+      <h3>⚠️ What Went Wrong</h3>
+      <p>Despite recognizing the need for more consistent meetings in our Iteration 1 retrospective, we failed to significantly improve this area in Iteration 2. Communication delays persisted, with questions often going unanswered for long periods. Scheduling regular team check-ins is something we need to prioritize going forward.</p>
+      <p>We also encountered technical debt due to rushed development — for example, improper placement of code in the main method in `CookingInstructionActivity`, and a misused static inner class in `RecipeAdapter`. These issues were identified and refactored post-implementation.</p>
+  
+      <h3>🔄 What We’d Do Differently</h3>
+      <p>If we had the chance to restart, we would enforce a stricter communication schedule, start using a shared task board earlier (such as GitHub issues with milestones), and plan time for code review to avoid technical debt buildup.</p>
+  
+      <h3>💡 Lessons Learned</h3>
+      <p>We learned the importance of readable, maintainable code — several of us created utility methods and helper classes to improve clarity and reusability. Agile practices such as branching by feature, retrospectives, and user stories helped us stay focused even when things got busy.</p>
+  
+      <h3>📊 Quantitative Insights</h3>
+      <ul>
+        <li>Project included over <strong>20 Java classes</strong>, with a strong focus on presentation and service layers.</li>
+        <li>Average time per feature: <strong>1–2 weeks</strong>, depending on complexity.</li>
+        <li>Design patterns used: <strong>Singleton, Factory, Adapter, Observer, Facade</strong>.</li>
+        <li>Most time-consuming feature: <strong>CookingInstructionActivity</strong> (involved timer logic, notes, and UI coordination).</li>
+      </ul>
+  
+      <h3>🛠️ Iteration 2 Retrospective Follow-up</h3>
+      <p>We aimed to improve our meeting frequency, but this unfortunately saw little progress. On the other hand, we succeeded in balancing workload better by assigning individual features. Communication still needs further improvement, especially with timely responses and availability.</p>
+  
+      <p>Overall, CookMate pushed our development skills in architecture, teamwork, testing, and UI/UX. We're proud of the progress and excited about what we accomplished as a team.</p>
+    </div>
+  </section>
+   <!-- Team -->
+  <section class="section" id="team">
+    <div class="section-text">
+      <h2>Meet the Team</h2>
+      <p><strong>Olufunmilayo Akintola: </strong>Gained skills in UI design, interface structuring, and handling user interactions by leading the development of key features like Cooking Instructions, Timer, and Add Recipe UI.<br/>
+         <strong>Konner Friesen: </strong>Improved code quality by applying SOLID principles and gained experience in full-stack development through work on the Recipe Detail page, including database and UI components.<br/>
+         <strong>Niraaj Ojha: </strong>Developed advanced database and UI skills and also strengthened testing expertise through JUnit/Espresso tests.<br/>
+         <strong>Dinh Thien Pham: </strong>Strengthened problem-solving skills in filtering and searching logic, and experienced an improvement in the system and integration testing proficiency.</p>
+      <p>We used Agile practices, pair programming, and Test-Driven Development throughout.</p>
+    </div>
+  </section>
+<!-- Footer -->
+  <footer>
+
+    <div>
+      <a href="https://code.cs.umanitoba.ca/comp3350-winter2025/a01-g01-nullpointers" target="_blank" rel="noopener noreferrer">GitLab</a>
+    </div>
+    <div>
+      <p>©2025 NullPointers Team</p>
+    </div>
+  </footer>
+  <script src="./static/app.js"></script>
+</body>
+</html>

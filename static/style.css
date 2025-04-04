@@ -1,0 +1,271 @@
+/* Reset & Base Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fefefe;
+  color: #202124;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #00796b;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #004d40;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  min-height: 100vh;
+  background: #BDDDE4;
+  color: #04364A;
+}
+
+.hero .hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero .button:hover {
+  background: #f1f1f1;
+}
+
+.hero img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Button */
+.button {
+  background-color: #00796b;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004d40;
+}
+
+/* Section Styling */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #eee;
+  background-color: #9EC6F3;
+  color: #04364A;
+}
+
+
+.section:nth-child(even) {
+  background-color: #BDDDE4; 
+  color: #074357;
+}
+
+
+.section-text {
+  flex: 1;
+  padding: 1rem;
+  width: auto ;
+}
+
+.section img, video {
+  flex: 1;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: inherit;
+  margin-bottom: 1rem;
+}
+
+.section p, .section li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.section ul {
+  padding-left: 1.5rem;
+}
+
+.section li::marker {
+  color: #00796b;
+}
+
+#features .section-text ul {
+  max-width: 800px; 
+
+}
+
+.full-video {
+  width: 100%;
+  max-width: 100%;
+  height: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+
+/* Postmortem Enhancements */
+#postmortem h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #00897b;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.video-container:hover .video-controls {
+  opacity: 1;
+}
+
+.video-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.video-controls button:hover {
+  color: #00796b;
+}
+
+/* Features Styling */
+#features li {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #00796b;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  padding: 30px 40px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #ffccbc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero, .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .button{
+    margin-bottom: 1rem;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 1rem;
+  }
+
+  header nav a {
+    margin: 0 1rem 0 0;
+  }
+}
